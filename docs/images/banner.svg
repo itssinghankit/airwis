@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Airwis: control your Mac with your hand">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1226"/>
+      <stop offset="0.55" stop-color="#1b1442"/>
+      <stop offset="1" stop-color="#0b2a3a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.4">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a9c7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#glow)"/>
+
+  <!-- air trail -->
+  <path d="M640 250 C 720 170, 800 300, 880 210 S 1010 140, 1060 120" fill="none" stroke="#5ee7ff" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- hand skeleton (MediaPipe style) -->
+  <g transform="translate(870 300)" stroke="#e6e6f0" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M0 0 L-40 -40 L-68 -78 L-90 -108 L-104 -132"/>
+    <path d="M0 0 L-22 -110 M0 0 L34 -100"/>
+    <path d="M-22 -110 L4 -112 L22 -108 L34 -100"/>
+    <path d="M-22 -110 L-30 -156 L-34 -184 L-36 -206"/>
+    <path d="M4 -112 L4 -164 L4 -196 L4 -220"/>
+    <path d="M22 -108 L32 -150 L38 -176 L42 -196"/>
+    <path d="M34 -100 L54 -130 L66 -150 L74 -166"/>
+  </g>
+  <g transform="translate(870 300)">
+    <g fill="#ff4d6d">
+      <circle cx="0" cy="0" r="5"/><circle cx="-40" cy="-40" r="5"/><circle cx="-68" cy="-78" r="5"/><circle cx="-90" cy="-108" r="5"/>
+      <circle cx="-22" cy="-110" r="5"/><circle cx="-30" cy="-156" r="5"/><circle cx="-34" cy="-184" r="5"/>
+      <circle cx="4" cy="-112" r="5"/><circle cx="4" cy="-164" r="5"/><circle cx="4" cy="-196" r="5"/>
+      <circle cx="22" cy="-108" r="5"/><circle cx="32" cy="-150" r="5"/><circle cx="38" cy="-176" r="5"/>
+      <circle cx="34" cy="-100" r="5"/><circle cx="54" cy="-130" r="5"/><circle cx="66" cy="-150" r="5"/><circle cx="74" cy="-166" r="5"/>
+    </g>
+    <g fill="#ffd400">
+      <circle cx="-104" cy="-132" r="10"/><circle cx="-36" cy="-206" r="10"/><circle cx="4" cy="-220" r="10"/><circle cx="42" cy="-196" r="10"/>
+    </g>
+  </g>
+
+  <!-- cursor -->
+  <g transform="translate(1040 92)">
+    <path d="M0 0 L0 46 L12 34 L22 56 L31 52 L21 31 L38 31 Z" fill="#ffffff" stroke="#0f1226" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <text x="80" y="170" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="104" font-weight="800" fill="url(#title)" letter-spacing="-3">Airwis</text>
+  <text x="84" y="222" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" fill="#c9cbe6">Control your Mac with a wave of your hand.</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="600">
+    <rect x="84" y="254" width="96" height="34" rx="17" fill="#5ee7ff" fill-opacity="0.15" stroke="#5ee7ff" stroke-opacity="0.6"/>
+    <text x="132" y="277" text-anchor="middle" fill="#5ee7ff">webcam</text>
+    <rect x="192" y="254" width="140" height="34" rx="17" fill="#ffd400" fill-opacity="0.12" stroke="#ffd400" stroke-opacity="0.6"/>
+    <text x="262" y="277" text-anchor="middle" fill="#ffd400">no hardware</text>
+    <rect x="344" y="254" width="130" height="34" rx="17" fill="#b18cff" fill-opacity="0.15" stroke="#b18cff" stroke-opacity="0.6"/>
+    <text x="409" y="277" text-anchor="middle" fill="#cdb6ff">100% local</text>
+  </g>
+</svg>

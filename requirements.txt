@@ -1,0 +1,6 @@
+mediapipe>=0.10.14
+# mediapipe already pulls in opencv-contrib-python; don't also install opencv-python (both provide cv2)
+opencv-contrib-python>=4.8
+pyobjc-framework-Quartz>=10.0
+numpy
+rumps>=0.4
